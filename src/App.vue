@@ -33,19 +33,16 @@ M27.4,-38.3C36.5,-25,45.6,-17.3,48.1,-7.8C50.6,1.8,46.6,13.2,42.4,28.5C38.3,43.8
       </svg>
     </div>
     <nav>
-      <router-link to="/">Home</router-link>
-      <router-link to="/about">About</router-link>
+      <!-- <router-link to="/">Home</router-link>
+      <router-link to="/about">About</router-link> -->
+      <Header/>
     </nav>
     <router-view />
   </div>
 </template>
 
-<script>
-export default {
-  // name: 'App',
-  // components: {
-  // }
-};
+<script setup>
+  import Header from "./components/HeaderComponent.vue";
 </script>
 
 <style>
