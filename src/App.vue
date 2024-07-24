@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <div class="blob">
+    <div class="blob hidden">
       <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
         <path fill="#8A3FFC" d="" transform="translate(100 100)">
           <animate
@@ -32,17 +32,11 @@ M27.4,-38.3C36.5,-25,45.6,-17.3,48.1,-7.8C50.6,1.8,46.6,13.2,42.4,28.5C38.3,43.8
         </path>
       </svg>
     </div>
-    <nav>
-      <!-- <router-link to="/">Home</router-link>
-      <router-link to="/about">About</router-link> -->
-      <Header/>
-    </nav>
     <router-view />
   </div>
 </template>
 
 <script setup>
-  import Header from "./components/HeaderComponent.vue";
 </script>
 
 <style>
@@ -52,12 +46,12 @@ M27.4,-38.3C36.5,-25,45.6,-17.3,48.1,-7.8C50.6,1.8,46.6,13.2,42.4,28.5C38.3,43.8
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  /* margin-top: 60px; */
 
 }
 
 body {
-  background-color: #000;
+  /* background-color: #000; */
  
 }
 
