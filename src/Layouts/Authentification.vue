@@ -1,14 +1,14 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
   <nav class="bg-white hidden md:block border-gray-200 dark:bg-gray-900">
-    <div class="flex flex-wrap items-center justify-between mx-auto p-4">
+    <div class="flex flex-wrap items-center justify-between mx-auto p-2">
       <a
-        href="https://flowbite.com/"
+        href="/"
         class="flex items-center space-x-3 rtl:space-x-reverse"
       >
         <img
-          src="https://flowbite.com/docs/images/logo.svg"
-          class="h-8"
+          src="../assets/images/delkremov.png"
+          class="h-16"
           alt="DELK Logo"
         />
         <span
