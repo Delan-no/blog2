@@ -114,7 +114,7 @@
     </div>
   </transition>
 
-  <div class="md:ml-64 lg:ml-32">
+  <div class="md:ml-64 lg:ml-64">
     <div class="rounded-lg">
       <main class="flex-1 p-4 max-w-5xl mx-auto">
         <slot></slot>
