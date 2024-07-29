@@ -1,20 +1,48 @@
 <template>
   <Authentification>
     <section class="bg-white dark:bg-gray-900 mt-20">
-      <div class="container px-6 py-10 mx-auto">
-        <div class="max-w-4xl mx-auto">
-          <div class="relative">
-            <img class="object-cover object-center w-full h-64 rounded-lg lg:h-80" :src="post.image" alt="">
-            <div class="absolute bottom-0 flex p-3 bg-white dark:bg-gray-900">
-              <img class="object-cover object-center w-10 h-10 md:w-full md:h-full rounded-full" :src="post.authorImage" alt="">
-              <div class="mx-4">
-                <h1 class="text-sm text-gray-700 dark:text-gray-200">{{ post.author }}</h1>
-                <p class="text-sm text-gray-500 dark:text-gray-400">{{ post.authorRole }}</p>
+      <div class="">
+        <div
+          class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row"
+        >
+          <img
+            class="object-cover w-full rounded-t-lg h-64 md:h-auto md:w-96 md:rounded-none md:rounded-s-lg"
+            :src="post.authorImage"
+            alt=""
+          />
+          <div
+            class="flex flex-col justify-between p-4 leading-normal md:p-6 lg:p-8"
+          >
+            <h5
+              class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-2xl lg:text-3xl"
+            >
+              {{ post.title }}
+            </h5>
+            <p
+              class="mb-3 font-normal text-gray-700 dark:text-gray-400 sm:text-base lg:text-lg"
+            >
+              {{ post.description }}
+            </p>
+            <figcaption class="flex items-center bg-blue-50 p-2 sm:p-3 lg:p-4">
+              <img
+                class="object-cover object-center w-10 h-10 rounded-full sm:w-12 sm:h-12 lg:w-14 lg:h-14"
+                :src="post.authorImage"
+                alt=""
+              />
+              <div
+                class="space-y-0.5 font-medium dark:text-white text-left rtl:text-right ms-3"
+              >
+                <div class="text-sm sm:text-base lg:text-lg">
+                  {{ post.author }}
+                </div>
+                <div
+                  class="text-xs text-gray-500 dark:text-gray-400 sm:text-sm lg:text-base"
+                >
+                  {{ post.authorRole }}
+                </div>
               </div>
-            </div>
+            </figcaption>
           </div>
-          <h1 class="mt-6 text-3xl font-semibold text-gray-800 dark:text-white">{{ post.title }}</h1>
-          <p class="mt-4 text-gray-600 dark:text-gray-400">{{ post.description }}</p>
         </div>
       </div>
     </section>
@@ -22,10 +50,10 @@
 </template>
 
 <script setup>
-import posts from '@/tables/articles.js';
-import Authentification from '@/Layouts/Authentification.vue';
-import { useRoute } from 'vue-router';
-import { ref, onMounted } from 'vue';
+import posts from "@/tables/articles.js";
+import Authentification from "@/Layouts/Authentification.vue";
+import { useRoute } from "vue-router";
+import { ref, onMounted } from "vue";
 
 const route = useRoute();
 
@@ -33,8 +61,8 @@ onMounted(() => {
   create();
 });
 const post = ref({});
+const postId = route.params.id;
 const create = () => {
-  const postId = route.params.id;
-  post.value = posts.find(post => post.id === parseInt(postId));
-}
+  post.value = posts.find((post) => post.id === parseInt(postId));
+};
 </script>

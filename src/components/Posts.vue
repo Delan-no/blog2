@@ -2,11 +2,10 @@
 
 <script setup>
 import { useRouter } from "vue-router";
-import posts from '@/tables/articles.js';
+import posts from "@/tables/articles.js";
 import Authentification from "@/Layouts/Authentification.vue";
 
 const router = useRouter();
-
 
 const truncateDescription = (description) => {
   const words = description.split(" ");
@@ -40,43 +39,44 @@ const readMore = (id) => {
           class="grid grid-cols-1 gap-8 mt-8 md:mt-16 md:grid-cols-2 xl:grid-cols-3"
         >
           <div
-            class="border-2 border-gray-200 rounded-lg pb-4"
+            class="border-2 border-gray-200 rounded-lg pb-4 hover:bg-gray-50"
             v-for="post in posts"
             :key="post.id"
           >
-            <div class="relative">
-              <img
-                class="object-cover object-center w-full h-64 rounded-lg lg:h-80"
-                :src="post.image"
-                alt=""
-              />
-              <div class="absolute bottom-0 flex p-3 bg-white dark:bg-gray-900">
-                <img
-                  class="object-cover object-center w-10 h-10 rounded-full"
-                  :src="post.authorImage"
-                  alt=""
-                />
-                <div class="mx-4">
-                  <h1 class="text-sm text-gray-700 dark:text-gray-200">
-                    {{ post.author }}
-                  </h1>
-                  <p class="text-sm text-gray-500 dark:text-gray-400">
-                    {{ post.authorRole }}
-                  </p>
-                </div>
-              </div>
-            </div>
             <h1
-              class="mt-6 text-xl font-semibold text-gray-800 dark:text-white"
+              class="mt-6 md:text-xl font-semibold text-gray-500 dark:text-white mx-2"
             >
               {{ post.title }}
             </h1>
+            <div class="flex justify-center items-center">
+              <img
+                class="object-cover object-center w-24 h-24"
+                :src="post.authorImage"
+                alt=""
+              />
+            </div>
             <hr class="w-32 my-6 text-blue-500" />
             <p class="text-sm text-gray-500 dark:text-gray-400">
               {{ truncateDescription(post.description) }}
             </p>
+
+            <figcaption class="flex items-center  bg-blue-50 p-2">
+              <img
+                class="object-cover object-center w-10 h-10 rounded-full"
+                :src="post.authorImage"
+                alt=""
+              />
+              <div
+                class="space-y-0.5 font-medium dark:text-white text-left rtl:text-right ms-3"
+              >
+                <div>{{ post.author }}</div>
+                <div class="text-sm text-gray-500 dark:text-gray-400">
+                  {{ post.authorRole }}
+                </div>
+              </div>
+            </figcaption>
             <button
-              class="inline-block mt-4 text-blue-500 underline hover:text-blue-400"
+              class="inline-block mt-4 bg-blue-500 px-3 rounded-md py-1 text-white hover:bg-blue-400"
               @click="readMore(post.id)"
             >
               Read more
@@ -88,6 +88,4 @@ const readMore = (id) => {
   </Authentification>
 </template>
 
-<style>
-
-</style>
+<style></style>
