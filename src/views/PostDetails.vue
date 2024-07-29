@@ -7,7 +7,7 @@
         >
           <img
             class="object-cover w-full rounded-t-lg h-64 md:h-auto md:w-96 md:rounded-none md:rounded-s-lg"
-            :src="post.authorImage"
+            :src="post.image"
             alt=""
           />
           <div

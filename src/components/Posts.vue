@@ -51,7 +51,7 @@ const readMore = (id) => {
             <div class="flex justify-center items-center">
               <img
                 class="object-cover object-center w-24 h-24"
-                :src="post.authorImage"
+                :src="post.image"
                 alt=""
               />
             </div>
