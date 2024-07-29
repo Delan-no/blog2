@@ -5,9 +5,8 @@ import PostDetails from './views/PostDetails.vue';
 
 const routes = [
   { path: '/', component: Home },
-  { path: '/home', component: Home },
-  { path: '/posts', component: PostViews },
-  { path: '/postsdetails', component: PostDetails }
+  { path: '/posts', component: PostViews, name: 'posts' },
+  { path: '/postsdetails/:id', component: PostDetails, name: 'PostDetails' }
 ];
 
 const router = createRouter({
