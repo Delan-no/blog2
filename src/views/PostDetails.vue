@@ -21,7 +21,7 @@
             <p
               class="mb-3 font-normal text-gray-700 dark:text-gray-400 sm:text-base lg:text-lg"
             >
-              {{ post.description }}
+              {{ formatDescription(post.description) }}
             </p>
             <figcaption class="flex items-center bg-blue-50 p-2 sm:p-3 lg:p-4">
               <img
@@ -56,6 +56,30 @@ import { useRoute } from "vue-router";
 import { ref, onMounted } from "vue";
 
 const route = useRoute();
+
+function formatDescription(description) {
+  // Vérifie si la description est définie et de type string
+  if (!description || typeof description !== "string") return "";
+
+  // Divise le texte en phrases en utilisant des délimiteurs de fin de phrase
+  let sentences = description.match(/[^.!?]+[.!?]*/g);
+
+  // Si aucune phrase n'est détectée (ex. pour les textes sans ponctuation), retourne le texte d'origine
+  if (!sentences) return description;
+
+  // Regroupe les phrases par deux et ajoute un saut de ligne après chaque groupe
+  let formattedDescription = "";
+  for (let i = 0; i < sentences.length; i++) {
+    formattedDescription += sentences[i].trim(); // Supprime les espaces en début/fin de phrase
+    if ((i + 1) % 2 === 0) {
+      formattedDescription += "\n;,,"; // Ajoute un saut de ligne HTML
+    } else {
+      formattedDescription += " "; // Ajoute un espace entre les phrases
+    }
+  }
+
+  return formattedDescription.trim();
+}
 
 onMounted(() => {
   create();

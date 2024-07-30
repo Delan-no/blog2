@@ -28,11 +28,10 @@ const readMore = (id) => {
           <h1
             class="text-2xl font-semibold text-gray-800 capitalize lg:text-3xl dark:text-white"
           >
-            From the blog
+            Les articles
           </h1>
           <p class="max-w-lg mx-auto mt-4 text-gray-500">
-            Salami mustard spice tea fridge authentic Chinese food dish salt
-            tasty liquor. Sweet savory foodtruck pie.
+            Bienvenue sur notre blog ! Explorez des articles passionnants, des analyses approfondies et des réflexions inspirantes sur les actualités et bien plus encore. Restez informé et enrichissez vos connaissances avec nous.
           </p>
         </div>
         <div
@@ -48,9 +47,9 @@ const readMore = (id) => {
             >
               {{ post.title }}
             </h1>
-            <div class="flex justify-center items-center">
+            <div class="flex justify-center items-center p-2 ">
               <img
-                class="object-cover object-center w-24 h-24"
+                class="object-cover object-center w-full h-full rounded-md"
                 :src="post.image"
                 alt=""
               />
@@ -69,9 +68,9 @@ const readMore = (id) => {
               <div
                 class="space-y-0.5 font-medium dark:text-white text-left rtl:text-right ms-3"
               >
-                <div>{{ post.author }}</div>
+                <div> Auteur : {{ post.author }}</div>
                 <div class="text-sm text-gray-500 dark:text-gray-400">
-                  {{ post.authorRole }}
+                  Catégorie : {{ post.authorRole }}
                 </div>
               </div>
             </figcaption>
@@ -79,7 +78,7 @@ const readMore = (id) => {
               class="inline-block mt-4 bg-blue-500 px-3 rounded-md py-1 text-white hover:bg-blue-400"
               @click="readMore(post.id)"
             >
-              Read more
+              Lire l'article
             </button>
           </div>
         </div>
