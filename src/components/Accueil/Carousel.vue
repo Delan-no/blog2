@@ -48,7 +48,7 @@
           :class="{ active: currentSlide === 3 }"
         >
           <img
-            src="../../assets/images/delkremov.png"
+            src="../../assets/images/image1.png"
             class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
             alt="..."
           />
