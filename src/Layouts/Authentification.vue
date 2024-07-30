@@ -93,7 +93,7 @@
     >
       <aside class="bg-slate-100 w-64 py-4 p-1 absolute top-0 left-0 bottom-0">
         <nav>
-          <router-link :to="{ name: 'accueil' }" class="block py-2 px-4 rounded" :class="{'bg-blue-500 text-white': $route.name === '/accueil'}"
+          <router-link to="/" class="block py-2 px-4 rounded" :class="{'bg-blue-500 text-white': $route.name === '/acceuil'}"
             >Accueil</router-link
           >
           <router-link :to="{ name: 'posts' }" class="block py-2 px-4 rounded" :class="{'bg-blue-500 text-white': $route.name === 'posts'}"
@@ -102,11 +102,12 @@
           <router-link to="/" class="block py-2 px-4 rounded" :class="{'bg-blue-500 text-white': $route.name === '/actualities'}"
             >Actualités</router-link
           >
-          <router-link to="/" class="block py-2 px-4 rounded" :class="{'bg-blue-500 text-white': $route.name === '/apropos'}"
+          <router-link :to="{name: 'apropos'}" class="block py-2 px-4 rounded" :class="{'bg-blue-500 text-white': $route.name === '/apropos'}"
             >A propos</router-link
           >
-          <router-link to="/" class="block py-2 px-4 rounded" :class="{'bg-blue-500 text-white': $route.name === '/contact'}"
-            >Contact</router-link
+         
+          <a href="https://delan-no-delan-nos-projects.vercel.app/" target="_blank" class="block py-2 px-4 rounded"
+            > Contact</a
           >
           <!-- <a href="#" class="block py-2 px-4 hover:bg-gray-300 rounded">Logout</a> -->
         </nav>
