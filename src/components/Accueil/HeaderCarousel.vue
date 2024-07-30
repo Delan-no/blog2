@@ -3,11 +3,11 @@
     <h1 class=" text-blue-500 text-lg lg:text-xl pb-2">
       22 lois du marketing que vous devez connaître
     </h1>
-    <div class="bg-gray-300 p-4 m-2 rounded-md">
-        <p class=" text-[14px]">
+    <div class="bg-[#2f4155] text-white p-4 m-2 rounded-md">
+        <p class=" text-[14px] py-2 border border-t">
           Il existe 22 lois immuables que tout marketeur devrait connaître par cœur.
           Elles résistent au temps et restent pertinentes. Pour en lire plus:
-          <a href="https://www.strategemarketing.com/?p=940" class="text-sm text-blue-800 hover:text-blue-500">https://www.strategemarketing.com</a>
+          <a href="https://www.strategemarketing.com/?p=940" class="text-sm text-green-100 hover:text-blue-500">https://www.strategemarketing.com</a>
         </p>
         <p  class=" text-[14px]">Ces 22 lois immuables ont été édictée par Jack Trout et Al Ries. En voici le résumé.</p>
     </div>
