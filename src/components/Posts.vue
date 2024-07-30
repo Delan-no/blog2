@@ -78,7 +78,7 @@ const readMore = (id) => {
               class="inline-block mt-4 bg-blue-500 px-3 rounded-md py-1 text-white hover:bg-blue-400"
               @click="readMore(post.id)"
             >
-              Lire l'article
+              Lire l'intégralité
             </button>
           </div>
         </div>
