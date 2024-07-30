@@ -22,7 +22,7 @@ const readMore = (id) => {
 
 <template>
   <Authentification>
-    <section class="bg-white dark:bg-gray-900">
+    <section class="bg-white dark:bg-gray-900 text-center">
       <div class="px-6 py-10 mx-auto">
         <div class="text-center">
           <h1

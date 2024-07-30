@@ -1,12 +1,12 @@
 <template>
   <Authentification>
-    <section class="bg-white dark:bg-gray-900 mt-20">
+    <section class="bg-white dark:bg-gray-900 mt-4 text-sm">
       <div class="">
         <div
           class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row"
         >
           <img
-            class="object-cover w-full rounded-t-lg h-64 md:h-auto md:w-96 md:rounded-none md:rounded-s-lg"
+            class="object-cover w-full rounded-t-lg h-48 md:h-auto md:w-96 md:rounded-none md:rounded-s-lg"
             :src="post.image"
             alt=""
           />
@@ -14,12 +14,12 @@
             class="flex flex-col justify-between p-4 leading-normal md:p-6 lg:p-8"
           >
             <h5
-              class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-2xl lg:text-3xl"
+              class="mb-2 text-lg font-bold tracking-tight text-center text-gray-900 dark:text-white sm:text-2xl lg:text-2xl"
             >
               {{ post.title }}
             </h5>
             <p
-              class="mb-3 font-normal text-gray-700 dark:text-gray-400 sm:text-base lg:text-lg"
+              class="mb-3 font-normal text-gray-700 text-justify dark:text-gray-400 sm:text-base lg:text-lg"
             >
               {{ formatDescription(post.description) }}
             </p>
@@ -72,7 +72,7 @@ function formatDescription(description) {
   for (let i = 0; i < sentences.length; i++) {
     formattedDescription += sentences[i].trim(); // Supprime les espaces en début/fin de phrase
     if ((i + 1) % 2 === 0) {
-      formattedDescription += "\n;,,"; // Ajoute un saut de ligne HTML
+      formattedDescription += "\n"; // Ajoute un saut de ligne HTML
     } else {
       formattedDescription += " "; // Ajoute un espace entre les phrases
     }

@@ -7,7 +7,7 @@
         class="flex items-center space-x-3 rtl:space-x-reverse"
       >
         <img
-          src="../assets/images/delkremov.png"
+          src="../assets/images/delktransparent.jpg"
           class="h-16"
           alt="DELK Logo"
         />
@@ -93,16 +93,16 @@
     >
       <aside class="bg-slate-100 w-64 py-4 p-1 absolute top-0 left-0 bottom-0">
         <nav>
-          <router-link to="/" class="block py-2 px-4 rounded" :class="{'bg-blue-500 text-white': $route.name === '/acceuil'}"
+          <router-link to="/" class="block py-2 px-4 rounded" :class="{'bg-blue-500 text-white': $route.name === 'acceuil'}"
             >Accueil</router-link
           >
           <router-link :to="{ name: 'posts' }" class="block py-2 px-4 rounded" :class="{'bg-blue-500 text-white': $route.name === 'posts'}"
             >Articles</router-link
           >
-          <router-link to="/" class="block py-2 px-4 rounded" :class="{'bg-blue-500 text-white': $route.name === '/actualities'}"
+          <router-link to="/" class="block py-2 px-4 rounded" :class="{'bg-blue-500 text-white': $route.name === 'actualities'}"
             >Actualités</router-link
           >
-          <router-link :to="{name: 'apropos'}" class="block py-2 px-4 rounded" :class="{'bg-blue-500 text-white': $route.name === '/apropos'}"
+          <router-link :to="{name: 'apropos'}" class="block py-2 px-4 rounded" :class="{'bg-blue-500 text-white': $route.name === 'apropos'}"
             >A propos</router-link
           >
          

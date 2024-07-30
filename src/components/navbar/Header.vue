@@ -4,7 +4,7 @@
     <div class="flex flex-wrap items-center justify-between mx-auto px-4">
       <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
         <img
-          src="../../assets/images/delkremov.png"
+          src="../../assets/images/delktransparent.jpg"
           class="h-16"
           alt="DELK Logo"
         />
