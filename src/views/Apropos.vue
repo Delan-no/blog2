@@ -54,6 +54,9 @@
           trouverez notre blog utile et inspirant.
         </p>
       </div>
+      <div class="flex justify-center">
+        <div class="loader "></div>
+      </div>
   </Authentification>
 </template>
 
@@ -85,4 +88,40 @@ h2{
 p {
   color: #666;
 }
+
+.loader {
+  display: inline-grid;
+  width: 50vmin;
+  aspect-ratio: 1;
+  animation: l3-0 5s steps(10) infinite;
+}
+.loader:before,
+.loader:after {
+  content:"";
+  grid-area: 1/1;
+}
+.loader:before {
+  clip-path: polygon(100% 50%,90.45% 79.39%,65.45% 97.55%,34.55% 97.55%,9.55% 79.39%,0% 50%,9.55% 20.61%,34.55% 2.45%,65.45% 2.45%,90.45% 20.61%,100% 50%,85.6% 24.14%,63.6% 8.15%,36.4% 8.15%,14.4% 24.14%,6% 50%,14.4% 75.86%,36.4% 91.85%,63.6% 91.85%,85.6% 75.86%,94% 50%,85.6% 24.14%);
+  background: rgb(102, 102, 196);
+}
+.loader:after {
+  background: rgb(65, 65, 217);
+  clip-path: polygon(100% 50%,65.45% 97.55%,9.55% 79.39%,9.55% 20.61%,65.45% 2.45%);
+  margin: 27%;
+  translate: 46% 0;
+  transform-origin: right;
+  animation: l3-1 .5s linear infinite;
+}
+@keyframes l3-0 {to{rotate: 1turn}}
+@keyframes l3-1 {
+  0%{rotate:  18deg}
+  to{rotate: -18deg}
+}
+
+/* body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+} */
 </style>
