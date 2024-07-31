@@ -18,36 +18,36 @@
       </a>
       <div class="w-full md:w-auto" id="navbar-default">
         <ul
-          class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+          class="font-medium flex flex-col p-4 md:py-1 px-3 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
         >
           <li>
             <router-link to="/" :class="{'bg-blue-500 text-white': $route.name === 'acceuil'}"
-              class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
+              class="block text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:py-1 px-3 dark:text-white md:dark:text-blue-500"
               aria-current="page"
               >Accueil</router-link
             >
           </li>
           <li>
             <router-link :to="{ name: 'posts' }" :class="{'bg-blue-500 text-white': $route.name === 'posts'}"
-              class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+              class="block text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:py-1 px-3 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >Articles</router-link
             >
           </li>
           <li>
             <router-link :to="{ name: 'actualities' }"  :class="{'bg-blue-500 text-white': $route.name === 'actualities'}"
-              class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+              class="block text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:py-1 px-3 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >Actualités</router-link
             >
           </li>
           <li>
             <router-link :to="{ name: 'apropos' }" :class="{'bg-blue-500 text-white': $route.name === 'apropos'}"
-              class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+              class="block text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:py-1 px-3 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >A propos</router-link
             >
           </li>
           <li>
             <a href="https://delan-no-delan-nos-projects.vercel.app/" target="_blank"
-              class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+              class="block text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:py-1 px-3 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >Contact</a
             >
           </li>
@@ -56,7 +56,7 @@
     </div>
   </nav>
   <div
-    class="flex justify-between items-center px-4 py-1 sticky top-0 border-b bg-white"
+    class="flex justify-between items-center px-6 py-1 sticky top-0 border-b bg-white"
   >
     <Header class="md:hidden"/> 
 
@@ -93,23 +93,23 @@
     >
       <aside class="bg-slate-100 w-64 py-4 p-1 absolute top-0 left-0 bottom-0">
         <nav>
-          <router-link to="/" class="block py-2 px-4 rounded" :class="{'bg-blue-500 text-white': $route.name === 'acceuil'}"
+          <router-link to="/" class="blockpx-6 rounded" :class="{'bg-blue-500 text-white': $route.name === 'acceuil'}"
             >Accueil</router-link
           >
-          <router-link :to="{ name: 'posts' }" class="block py-2 px-4 rounded" :class="{'bg-blue-500 text-white': $route.name === 'posts'}"
+          <router-link :to="{ name: 'posts' }" class="blockpx-6 rounded" :class="{'bg-blue-500 text-white': $route.name === 'posts'}"
             >Articles</router-link
           >
-          <router-link :to="{ name: 'actualities' }" class="block py-2 px-4 rounded" :class="{'bg-blue-500 text-white': $route.name === 'actualities'}"
+          <router-link :to="{ name: 'actualities' }" class="blockpx-6 rounded" :class="{'bg-blue-500 text-white': $route.name === 'actualities'}"
             >Actualités</router-link
           >
-          <router-link :to="{name: 'apropos'}" class="block py-2 px-4 rounded" :class="{'bg-blue-500 text-white': $route.name === 'apropos'}"
+          <router-link :to="{name: 'apropos'}" class="blockpx-6 rounded" :class="{'bg-blue-500 text-white': $route.name === 'apropos'}"
             >A propos</router-link
           >
          
-          <a href="https://delan-no-delan-nos-projects.vercel.app/" target="_blank" class="block py-2 px-4 rounded"
+          <a href="https://delan-no-delan-nos-projects.vercel.app/" target="_blank" class="blockpx-6 rounded"
             > Contact</a
           >
-          <!-- <a href="#" class="block py-2 px-4 hover:bg-gray-300 rounded">Logout</a> -->
+          <!-- <a href="#" class="blockpx-6 hover:bg-gray-300 rounded">Logout</a> -->
         </nav>
       </aside>
     </div>
@@ -124,11 +124,14 @@
     </div>
   </div>
   <!-- <AsideDroite/> -->
+
+  <Footer/>
 </template>
 <script setup>
 import { ref } from "vue";
 
    import Header from "@/components/navbar/Header.vue";
+   import Footer from "@/components/Footer.vue";
 // import AsideGauche from "@/Layouts/sidebar/AsideGauche.vue";
 //    import AsideDroite from "@/Layouts/sidebar/AsideDroite.vue"
 
@@ -148,5 +151,8 @@ const toggleMobileMenu = () => {
 .slide-enter,
 .slide-leave-to {
   transform: translateX(-100%);
+}
+router-link:active{
+  padding-top: 20PX !important;
 }
 </style>
