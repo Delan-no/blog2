@@ -1,6 +1,6 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
-  <nav class="bg-white hidden md:block border-gray-200 dark:bg-gray-900">
+  <nav class="bg-white hidden md:block border-gray-200 dark:bg-gray-900 lg:mx-auto xl:max-w-7xl">
     <div class="flex flex-wrap items-center justify-between mx-auto p-2">
       <a
         href="/"
@@ -21,34 +21,34 @@
           class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
         >
           <li>
-            <router-link to="/"
+            <router-link to="/" :class="{'bg-blue-500 text-white': $route.name === 'acceuil'}"
               class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
               aria-current="page"
               >Accueil</router-link
             >
           </li>
           <li>
-            <router-link :to="{ name: 'posts' }"
+            <router-link :to="{ name: 'posts' }" :class="{'bg-blue-500 text-white': $route.name === 'posts'}"
               class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >Articles</router-link
             >
           </li>
           <li>
-            <router-link to="/"
+            <router-link :to="{ name: 'actualities' }"  :class="{'bg-blue-500 text-white': $route.name === 'actualities'}"
               class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >Actualités</router-link
             >
           </li>
           <li>
-            <router-link to="/"
+            <router-link :to="{ name: 'apropos' }" :class="{'bg-blue-500 text-white': $route.name === 'apropos'}"
               class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >A propos</router-link
             >
           </li>
           <li>
-            <router-link to="/"
+            <a href="https://delan-no-delan-nos-projects.vercel.app/" target="_blank"
               class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-              >Contact</router-link
+              >Contact</a
             >
           </li>
         </ul>
@@ -83,7 +83,7 @@
     </div>
   </div>
 
-  <AsideGauche />
+  <!-- <AsideGauche /> -->
 
   <transition name="slide">
     <div
@@ -99,7 +99,7 @@
           <router-link :to="{ name: 'posts' }" class="block py-2 px-4 rounded" :class="{'bg-blue-500 text-white': $route.name === 'posts'}"
             >Articles</router-link
           >
-          <router-link to="/" class="block py-2 px-4 rounded" :class="{'bg-blue-500 text-white': $route.name === 'actualities'}"
+          <router-link :to="{ name: 'actualities' }" class="block py-2 px-4 rounded" :class="{'bg-blue-500 text-white': $route.name === 'actualities'}"
             >Actualités</router-link
           >
           <router-link :to="{name: 'apropos'}" class="block py-2 px-4 rounded" :class="{'bg-blue-500 text-white': $route.name === 'apropos'}"
@@ -115,8 +115,9 @@
     </div>
   </transition>
 
-  <div class="md:ml-64 lg:ml-64">
-    <div class="rounded-lg">
+  <!-- <div class="md:ml-64 lg:ml-64"> -->
+  <div class="">
+    <div class="rounded-lg ">
       <main class="flex-1 p-4 max-w-5xl mx-auto">
         <slot></slot>
       </main>
@@ -128,7 +129,7 @@
 import { ref } from "vue";
 
    import Header from "@/components/navbar/Header.vue";
-import AsideGauche from "@/Layouts/sidebar/AsideGauche.vue";
+// import AsideGauche from "@/Layouts/sidebar/AsideGauche.vue";
 //    import AsideDroite from "@/Layouts/sidebar/AsideDroite.vue"
 
 const isMobileMenuOpen = ref(false);

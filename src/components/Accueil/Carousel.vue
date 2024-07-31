@@ -1,7 +1,7 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
   <Authentification>
-    <h3 class="text-gray-600 mb-4">
+    <h3 class="text-gray-600 mb-4 text-sm text-justify lg:text-xl">
       Bienvenue sur notre page ! Si vous êtes entrepreneur, nous vous invitons
       à découvrir les 22 lois du marketing, qui pourraient considérablement
       booster vos différentes entreprises.
@@ -17,7 +17,7 @@
           <img
             src="../../assets/images/delk2.jpg"
             class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-            alt="..."
+            alt="images"
           />
         </div>
         <!-- Item 2 -->
@@ -28,7 +28,7 @@
           <img
             src="../../assets/images/delk1.jpg"
             class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-            alt="..."
+            alt="images"
           />
         </div>
         <!-- Item 3 -->
@@ -39,7 +39,7 @@
           <img
             src="../../assets/images/delk.jpg"
             class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-            alt="..."
+            alt="images"
           />
         </div>
         <!-- Item 4 -->
@@ -50,7 +50,7 @@
           <img
             src="../../assets/images/image1.png"
             class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-            alt="..."
+            alt="images"
           />
         </div>
         <!-- Item 5 -->
@@ -61,7 +61,7 @@
           <img
             src="../../assets/images/image4.png"
             class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-            alt="..."
+            alt="images"
           />
         </div>
       </div>

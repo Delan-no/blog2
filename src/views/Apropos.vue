@@ -3,14 +3,14 @@
   <Authentification>
       <div class="p-2">
         <h1>À propos</h1>
-        <p>
+        <p class="text-justify">
           Bienvenue sur notre blog dédié aux actualités et aux réflexions sur divers
           sujets passionnants. Notre mission est de vous offrir des articles de
           qualité, des analyses approfondies et des perspectives uniques qui
           enrichiront vos connaissances et vous inspireront.
         </p>
         <h2 class="mt-4 text-blue-500">Qui sommes-nous ?</h2>
-        <p>
+        <p class="text-justify">
           Nous sommes une équipe de passionnés, déterminés à partager des
           informations pertinentes et à susciter des discussions enrichissantes. Que
           vous soyez un entrepreneur en quête de conseils, un amateur de
@@ -37,19 +37,19 @@
           </li>
         </ul>
         <h2>Pourquoi nous suivre ?</h2>
-        <p>
+        <p class="text-justify">
           En nous suivant, vous aurez accès à des contenus régulièrement mis à jour,
           rédigés par des experts et des passionnés. Nous nous engageons à vous
           fournir des informations fiables et à vous offrir une expérience de
           lecture agréable et enrichissante.
         </p>
         <h2>Contactez-nous</h2>
-        <p>
+        <p class="text-justify">
           Nous serions ravis de recevoir vos commentaires, suggestions et questions.
           N'hésitez pas à nous contacter via notre formulaire de contact ou à nous
           suivre sur les réseaux sociaux pour rester connecté.
         </p>
-        <p>
+        <p class="text-justify">
           Merci de faire partie de notre communauté. Nous espérons que vous
           trouverez notre blog utile et inspirant.
         </p>
