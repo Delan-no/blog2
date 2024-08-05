@@ -93,20 +93,20 @@
     >
       <aside class="bg-slate-100 w-64 py-4 p-1 absolute top-0 left-0 bottom-0">
         <nav>
-          <router-link to="/" class="blockpx-6 rounded" :class="{'bg-blue-500 text-white': $route.name === 'acceuil'}"
+          <router-link to="/" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent" :class="{'bg-blue-500 text-white': $route.name === 'acceuil'}"
             >Accueil</router-link
           >
-          <router-link :to="{ name: 'posts' }" class="blockpx-6 rounded" :class="{'bg-blue-500 text-white': $route.name === 'posts'}"
+          <router-link :to="{ name: 'posts' }" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent" :class="{'bg-blue-500 text-white': $route.name === 'posts'}"
             >Articles</router-link
           >
-          <router-link :to="{ name: 'actualities' }" class="blockpx-6 rounded" :class="{'bg-blue-500 text-white': $route.name === 'actualities'}"
+          <router-link :to="{ name: 'actualities' }" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent" :class="{'bg-blue-500 text-white': $route.name === 'actualities'}"
             >Actualités</router-link
           >
-          <router-link :to="{name: 'apropos'}" class="blockpx-6 rounded" :class="{'bg-blue-500 text-white': $route.name === 'apropos'}"
+          <router-link :to="{name: 'apropos'}" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent" :class="{'bg-blue-500 text-white': $route.name === 'apropos'}"
             >A propos</router-link
           >
          
-          <a href="https://delan-no-delan-nos-projects.vercel.app/" target="_blank" class="blockpx-6 rounded"
+          <a href="https://delan-no-delan-nos-projects.vercel.app/" target="_blank" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
             > Contact</a
           >
           <!-- <a href="#" class="blockpx-6 hover:bg-gray-300 rounded">Logout</a> -->
